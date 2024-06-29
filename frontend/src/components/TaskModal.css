@@ -1,0 +1,107 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 90%;
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content input[type="number"],
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  resize: vertical;
+}
+
+.modal-content button {
+  display: inline-block;
+  width: 48%;
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.modal-content button:hover {
+  background-color: #1e88e5;
+}
+
+.modal-content button:nth-child(2) {
+  background-color: #f44336;
+}
+
+.modal-content button:nth-child(2):hover {
+  background-color: #e53935;
+}
+
+body.dark-mode .modal-content {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode .modal-content h2 {
+  color: #ffffff;
+}
+
+body.dark-mode .modal-content label {
+  color: #ffffff;
+}
+
+body.dark-mode .modal-content input[type="text"],
+body.dark-mode .modal-content input[type="date"],
+body.dark-mode .modal-content input[type="number"],
+body.dark-mode .modal-content textarea,
+body.dark-mode .modal-content select {
+  border: 1px solid #555;
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
